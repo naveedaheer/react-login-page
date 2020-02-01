@@ -1,8 +1,6 @@
 import React from 'react';
 import '../../css/formBuilder.css';
-import '../../css/main.css';
 import '../../css/main1.css';
-import '../../css/navBar.css';
 
 class Login extends React.Component {
   constructor(props) {
@@ -11,17 +9,17 @@ class Login extends React.Component {
     this.state = { showModal: false };
   }
 
+  // Updates the state variable to display the modal
   showModal = () => {
     this.setState({ showModal: true });
   };
 
+  // Updates the state variable to hide the modal
   hideModal = () => {
     this.setState({ showModal: false });
   };
 
   render() {
-    console.log("state", this.state)
-
     return (
       <div>
         <div className="page-wrapper p-b-50" style={{ marginTop: '4%' }}>
